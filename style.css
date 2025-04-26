@@ -1,0 +1,232 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: Inter;
+}
+
+
+
+
+body {
+    margin: 0;
+    font-family: sans-serif; /* Or the font from the image if known */
+    background-color: #1a1a2e; /* Dark background color */
+    color: #ffffff; /* White text color */
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styling */
+.site-header {
+    background-color: #16213e; /* Slightly different dark background */
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-title {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.dropdown ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.dropdown ul li {
+    position: relative;
+    margin-left: 30px;
+}
+
+.dropdown ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px 0;
+    display: block;
+}
+
+.dropdown .dropdown-arrow {
+    margin-left: 5px;
+    font-size: 0.8em; /* Adjust arrow size */
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%; /* Position below the parent link */
+    left: 0;
+    background-color: #050c21; /* Dropdown background */
+    list-style: none;
+    margin: 0;
+    padding: 10px 0;
+    min-width: 150px;
+    z-index: 10;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    /* Display dropdown by default as no hover is allowed */
+    display: block;
+}
+
+.dropdown-menu li {
+    margin: 0;
+}
+
+
+.div{
+border: 1px solid #232028;
+background-color: #232028;
+border-radius: 32px;
+gap: 10px;
+
+}
+
+.dropdown-menu li a {
+    padding: 8px 20px;
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+}
+
+
+.auth-links a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.auth-button {
+    background-color: #BFAFF2; 
+    padding: 8px 15px;
+    border-radius: 5px;
+    color: #ffffff !important; 
+}
+
+
+.site-main {
+    padding: 40px 0;
+}
+
+.character-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 30px; 
+}
+
+.character-card {
+   
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+   position: relative;
+    margin: -50 auto;
+}
+
+.character-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 5px; 
+}
+
+.character-card h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.3em;
+    color: #ffffff;
+}
+
+.character-card p {
+    font-size: 0.9em;
+    color: #cccccc;
+}
+
+
+.site-footer {
+    background-color: #16213e; 
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-links a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.social-links a:first-child {
+    margin-left: 0;
+}
+
+.dropdown {
+    position: relative;
+    display: flex;
+  }
+  .dropdown-button {
+    background: none;
+    border: none;
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .dropdown::after {
+    content: '▾';
+    font-size: 16px;
+    margin-left: 5px;
+    transition: transform 0.3s;
+    display: inline-block;
+  }
+  .dropdown:hover::after {
+    transform: rotate(180deg);
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 35px;
+    background-color: #1b1b2f;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    min-width: 150px;
+    z-index: 1;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .dropdown:active .dropdown-content {
+    display: flex;
+  }
+  .dropdown-content button {
+    background-color: #000;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    text-align: left;
+    cursor: pointer;
+    transition:  0.3s;
+  }
+  .dropdown-content button:hover {
+    background-color: #c2a8f9;
+    color: black;
+  }
